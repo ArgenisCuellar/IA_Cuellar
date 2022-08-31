@@ -1,12 +1,49 @@
 import os
 def Ej1_1_1():
+    
+    numeros =  set((2, 3, 5, 7, 11, 13))
+    colores = set(('rojo', 'naranja', 'amarillo', 'verde', 'azul', 'rosa', 'violeta'))
+    
     print(
         """\
     Ejemplo:
+
+        Conjunto de numeros: {}
+        Conjunto de colores: {}
+        """.format(numeros,colores))
     
-        P = {2, 3, 5, 7, 11, 13, …}
-        AI = {rojo, naranja, amarillo, verde, azul, añil, violeta}
-        """)
+def Ej1_2_3():
+    
+    universal = set((1,2,3,4,5,6,7,8,9,10,11,12,13))
+    A = set((1,3,5,7,9))
+    B = set((2,4,6,8,10))
+    
+    union = A.union(B)
+    intersection = A.intersection(B)
+    diference = A.difference(B)
+    sim_diff = A.symmetric_difference(B)
+    complement = universal - A
+    
+    
+    
+    
+    print(
+        """\
+        Sets ejemplo:
+        
+        Universal = {}
+        A = {}
+        B = {}
+        
+        Union A y B: {}
+        Interseccion A y B: {}
+        Diferencia A y B: {}
+        Diferencia Simetrica A y B: {}
+        Complemento Universal y A: {}
+        
+        """.format(universal,A,B,union,intersection,diference,sim_diff,complement))
+
+
 def Tema1_1_1():
     print(
         """
@@ -18,9 +55,6 @@ def Tema1_1_1():
         """)
     Ej1_1_1()
     
-
-    
-
 def Tema1_1_2():
     print(
         """
@@ -53,7 +87,7 @@ def Tema1_2():
         
         Las operaciones con conjuntos nos permiten realizar operaciones sobre 
         los conjuntos para obtener otro conjunto.
-
+        
         """)
     
 def Tema1_2_1():
@@ -82,21 +116,22 @@ def Tema1_2_3():
         """
         1.2.3. Unión, intersección, complemento, diferencia y diferencia simétrica.
         
-        Unión: Es la operación que nos permite unir dos o más conjuntos para formar otro conjunto que contendrá a todos los elementos 
-        que queremos unir, pero sin que se repitan.
-        
-        Intersección: Es la operación que nos permite formar un conjunto, sólo con los elementos comunes involucrados en la operación.
-        
-        Complemento: Es la operación que nos permite formar un conjunto con todos los elementos del conjunto de referencia o universal, 
-        que no están en el conjunto.
-        
-        Diferencia: Es la operación que nos permite formar un conjunto, en donde de dos conjuntos el conjunto resultante es el que tendrá 
-        todos los elementos que pertenecen al primero pero no al segundo.
-        
-        Diferencia simétrica: Es la operación que nos permite formar un conjunto, en donde de dos conjuntos el conjunto resultante es el 
-        que tendrá todos los elementos que no sean comunes a ambos conjuntos.
+        Unión: Es la operación que nos permite unir dos o más conjuntos para formar otro 
+        conjunto que contendrá a todos los elementos que queremos unir, pero sin que se repitan. 
 
+        Intersección: Es la operación que nos permite formar un conjunto, sólo con los elementos 
+        comunes involucrados en la operación.
+
+        Diferencia: Es la operación que nos permite formar un conjunto, en donde de dos conjuntos 
+        el conjunto resultante es el que tendrá todos los elementos que pertenecen al primero pero no al segundo. 
+
+        Diferencia simétrica: Es la operación que nos permite formar un conjunto, en donde de dos 
+        conjuntos el conjunto resultante es el que tendrá todos los elementos que no sean comunes a ambos conjuntos.
+
+        Complemento: Es la operación que nos permite formar un conjunto con todos los elementos del 
+        conjunto de referencia o universal, que no están en el conjunto. 
         """)
+    Ej1_2_3()
     
 def Tema1_3():
     print(
